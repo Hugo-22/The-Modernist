@@ -176,3 +176,8 @@ footer .row4 {
     background-color: var(--color-grey-fnc);
     border-top: var(--color-border-footer) solid 1px;
 }
+
+.row-footer{
+    justify-content: space-between;
+    align-items: center;
+}
