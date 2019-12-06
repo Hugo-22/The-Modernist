@@ -2,7 +2,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ======== variables */
@@ -18,7 +18,7 @@ body{
 }
 
 /* ============== MaZ des marges et padding */
-p, ul, h1, h2, h3, h4, div, li {
+ul, h1, h2, div {
     margin: 0;
     padding: 0;
 }
@@ -46,12 +46,41 @@ p, ul, h1, h2, h3, h4, div, li {
 
 .row4 {
     width: 23.45%;
-    display: flex;
-    background-color: red;
 }
 
 .sb {
     justify-content: space-between;
+}
+
+/* ========================= grilles de polices ======== */
+
+.t10 {
+    font-size: 10px;
+}
+
+.t12 {
+    font-size: 12px;
+}
+
+.t13 {
+    font-size: 13px;
+}
+
+.t14 {
+    font-size: 14px;
+}
+
+ 
+.vert{
+    color: var(--color-green-hover);
+}
+
+.opa30 {
+    opacity: 30%;
+}
+
+.opa50 {
+    opacity: 50%;
 }
 
 /* ========================= footer ============================================================*/
@@ -60,6 +89,7 @@ p, ul, h1, h2, h3, h4, div, li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: var(--color-white);
 }
 
 
@@ -76,9 +106,21 @@ p, ul, h1, h2, h3, h4, div, li {
 
 footer h3{
     font-size: 16px;
-    margin-bottom: 32px;
     font-weight: normal;
-    color: var(--color-white)
+    color: var(--color-white);
+}
+
+
+.container-footer a, .container-footer a:visited {
+    text-decoration: none;
+    color: var(--color-green-hover);
+    font-weight: lighter;    
+}
+
+footer li{
+    padding: 10px 0px;
+    border-bottom: 1px solid #ffffff6e;
+    list-style-type: ;
 }
 
 /* ============================= deuxieme partie du footer ==================== */
@@ -88,3 +130,13 @@ footer h3{
     border-top: var(--color-border-footer) solid 1px;
 }
 
+.test{
+    height: 100px;
+    width: 100px;
+    background: red;
+
+}
+
+.testa{
+    display: inline-block;
+}
