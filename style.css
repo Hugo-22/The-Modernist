@@ -15,10 +15,11 @@ body{
     --color-border-footer : #3a3a3a;
     --color-black : #000000;
     --color-white : #ffffff;
+    --color-bg-form : #222222;
 }
 
 /* ============== MaZ des marges et padding */
-ul, h1, h2, div {
+ul, h1, h2, h3, h4, div {
     margin: 0;
     padding: 0;
 }
@@ -83,6 +84,15 @@ ul, h1, h2, div {
     opacity: 50%;
 }
 
+.line18{
+line-height: 18px;
+}
+
+.line22 {
+    line-height: 22px;
+}
+
+
 /* ========================= footer ============================================================*/
 .container-large-footer{
     height: 450px;
@@ -100,14 +110,11 @@ ul, h1, h2, div {
     border-bottom: var(--color-black) solid 1px ;
 }
 
-.container-footer{
-    align-items: center;
-}
-
 footer h3{
     font-size: 16px;
     font-weight: normal;
     color: var(--color-white);
+    margin-bottom: 30px;
 }
 
 
@@ -115,12 +122,52 @@ footer h3{
     text-decoration: none;
     color: var(--color-green-hover);
     font-weight: lighter;    
+    opacity: 100%;
 }
 
 footer li{
-    padding: 10px 0px;
-    border-bottom: 1px solid #ffffff6e;
-    list-style-type: ;
+    padding: 8px 0px;
+    border-bottom: 1px solid #ffffff36;
+    list-style-image : url(images/puce.png);
+    list-style-position: inside;
+}
+
+footer .row4 {
+    height: 80%;
+    margin: auto 0;
+}
+
+.petitForm{
+    height: 35px;
+    width: 195px;
+    background: var(--color-bg-form);
+    border-radius: 10px/10px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    color: var(--color-white);
+}
+ 
+.grandForm{
+    height: 60px;
+    width: 195px;
+    background: var(--color-bg-form);
+    border-radius: 10px/10px;
+    border: none;
+    margin-bottom: 10px;
+    color: var(--color-white);
+    padding: 10px 15px;
+}
+
+
+.button-contact{
+    border-radius: 10px/10px;
+    background: var(--color-green-hover);
+    color: var(--color-bg-form);
+    border: none;
+    height: 35px;
+    width: 75px;
+    font-weight: bold;
 }
 
 /* ============================= deuxieme partie du footer ==================== */
@@ -128,15 +175,4 @@ footer li{
     height: 61px;
     background-color: var(--color-grey-fnc);
     border-top: var(--color-border-footer) solid 1px;
-}
-
-.test{
-    height: 100px;
-    width: 100px;
-    background: red;
-
-}
-
-.testa{
-    display: inline-block;
 }
