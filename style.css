@@ -2,6 +2,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Georgia, serif;
 }
 
 /* ======== variables */
@@ -13,10 +14,11 @@ body{
     --main-bg-color : #670000;
     --color-border-footer : #3a3a3a;
     --color-black : #000000;
+    --color-white : #ffffff;
 }
 
 /* ============== MaZ des marges et padding */
-p, ul, h1, h2, h3, div, li {
+p, ul, h1, h2, h3, h4, div, li {
     margin: 0;
     padding: 0;
 }
@@ -28,6 +30,7 @@ p, ul, h1, h2, h3, div, li {
 
 .container{
     width: 960px;
+    height: 100%;
     margin: auto;
 }
 
@@ -41,6 +44,15 @@ p, ul, h1, h2, h3, div, li {
     flex-direction: column;
 }
 
+.row4 {
+    width: 23.45%;
+    display: flex;
+    background-color: red;
+}
+
+.sb {
+    justify-content: space-between;
+}
 
 /* ========================= footer ============================================================*/
 .container-large-footer{
@@ -58,6 +70,16 @@ p, ul, h1, h2, h3, div, li {
     border-bottom: var(--color-black) solid 1px ;
 }
 
+.container-footer{
+    align-items: center;
+}
+
+footer h3{
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: normal;
+    color: var(--color-white)
+}
 
 /* ============================= deuxieme partie du footer ==================== */
 .container-large-footer-2{
