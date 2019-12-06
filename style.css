@@ -1,2 +1,96 @@
-/* CONTAINER width = 960PX */ 
-/* VARIABLES COLOR */ 
+/* VAR COLORS */ 
+:root {
+    --main-bg-color: #670000; 
+    --color-white: #ffffff;
+    --color-gray: #363636;
+}
+body {
+    font-family: Georgia, sans-serif;
+}
+body, p, main, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* GRILLE */
+.container-large {
+    width: 100%;
+}
+.container {
+    height: 100%;
+    width: 960px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+/* COLOR */
+.main-color {
+    background-color: var(--main-bg-color);
+}
+.col-bg-color {
+    background-color: var(--color-white);
+}
+
+.col-width {
+    width: 225px;
+    height: 305px;
+    text-align: center;
+}
+.col p img {
+    padding-top: 20px;
+}
+
+/* STYLE SERVICES */
+.h2-style-col {
+    font-weight: normal;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.p-style-col {
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: -25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #A1A1A1;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+}
+/* HOVER COL SERVICE */
+a:hover div {
+    color: white;
+    background-color: #81CA9A;
+
+}
+a:hover .p-style-col {
+    color: white;
+}
+.trans:hover {
+    transform: translateY(-5px) ;
+    box-shadow: 0 5px 5px #A1A1A1;
+}
+
+/* SECTION LATEST WORK */ 
+.h2-style-work {
+    text-align: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.bg-and-border {
+    background-color: var(--color-gray);
+    padding: 9px;
+    border-radius: 10px;
+}
