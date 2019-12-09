@@ -1,1 +1,183 @@
-/* CONTAINER width = 960PX */ 
+/* ============================================ preparation du projet =================================================================== */ 
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ======== variables */
+:root{
+    --color-grey-clr : #303030;
+    --color-grey-fnc : #2b2b2b;
+    --color-grey-service : #333333;
+    --color-green-hover : #76c38f;
+    --main-bg-color : #670000;
+    --color-border-footer : #3a3a3a;
+    --color-black : #000000;
+    --color-white : #ffffff;
+    --color-bg-form : #222222;
+}
+
+/* ============== MaZ des marges et padding */
+ul, h1, h2, h3, h4, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= grilles */
+.container-large{
+    width: 100%;
+}
+
+.container{
+    width: 960px;
+    height: 100%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.row4 {
+    width: 23.45%;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+/* ========================= grilles de polices ======== */
+
+.t10 {
+    font-size: 10px;
+}
+
+.t12 {
+    font-size: 12px;
+}
+
+.t13 {
+    font-size: 13px;
+}
+
+.t14 {
+    font-size: 14px;
+}
+
+ 
+.vert{
+    color: var(--color-green-hover);
+}
+
+.opa30 {
+    opacity: 30%;
+}
+
+.opa50 {
+    opacity: 50%;
+}
+
+.line18{
+line-height: 18px;
+}
+
+.line22 {
+    line-height: 22px;
+}
+
+
+/* ========================= footer ============================================================*/
+.container-large-footer{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+
+/* ============================= première partie du footer ==================== */
+.container-large-footer-1{
+    height: 387px;
+    background: var(--color-grey-clr);
+    border-bottom: var(--color-black) solid 1px ;
+}
+
+footer h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--color-white);
+    margin-bottom: 30px;
+}
+
+
+.container-footer a, .container-footer a:visited {
+    text-decoration: none;
+    color: var(--color-green-hover);
+    font-weight: lighter;    
+    opacity: 100%;
+}
+
+footer li{
+    padding: 8px 0px;
+    border-bottom: 1px solid #ffffff36;
+    list-style-image : url(images/puce.png);
+    list-style-position: inside;
+}
+
+footer .row4 {
+    height: 80%;
+    margin: auto 0;
+}
+
+.petitForm{
+    height: 35px;
+    width: 195px;
+    background: var(--color-bg-form);
+    border-radius: 10px/10px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    color: var(--color-white);
+}
+ 
+.grandForm{
+    height: 60px;
+    width: 195px;
+    background: var(--color-bg-form);
+    border-radius: 10px/10px;
+    border: none;
+    margin-bottom: 10px;
+    color: var(--color-white);
+    padding: 10px 15px;
+}
+
+
+.button-contact{
+    border-radius: 10px/10px;
+    background: var(--color-green-hover);
+    color: var(--color-bg-form);
+    border: none;
+    height: 35px;
+    width: 75px;
+    font-weight: bold;
+}
+
+/* ============================= deuxieme partie du footer ==================== */
+.container-large-footer-2{
+    height: 61px;
+    background-color: var(--color-grey-fnc);
+    border-top: var(--color-border-footer) solid 1px;
+}
+
+.row-footer{
+    justify-content: space-between;
+    align-items: center;
+}
