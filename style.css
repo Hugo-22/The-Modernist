@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ============================================ preparation du projet =================================================================== */ 
 body{
     padding: 0;
@@ -17,28 +16,19 @@ body{
     --color-black : #000000;
     --color-white : #ffffff;
     --color-bg-form : #222222;
+    --color-green-moche: #81CA9A;
+    --color-gray: #363636;
 }
 
 /* ============== MaZ des marges et padding */
-ul, h1, h2, h3, h4, div {
-=======
-/* VAR COLORS */ 
-:root {
-    --main-bg-color: #670000; 
-    --color-white: #ffffff;
-    --color-gray: #363636;
-    --color-green-moche: #81CA9A;
-}
-body {
-    font-family: Georgia, sans-serif;
-}
-body, p, main, section {
->>>>>>> developpement
+ul, h1, h3, h4, div {
     margin: 0;
     padding: 0;
 }
+main p {
+    margin: 0;
+}
 
-<<<<<<< HEAD
 /* ========================= grilles */
 .container-large{
     width: 100%;
@@ -46,13 +36,15 @@ body, p, main, section {
 
 .container{
     width: 960px;
-    height: 100%;
+    /* height: 100%; */
     margin: auto;
 }
 
 .row{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .col{
@@ -61,11 +53,7 @@ body, p, main, section {
 }
 
 .row4 {
-    width: 23.45%;
-}
-
-.sb {
-    justify-content: space-between;
+    width: 23.45%;;
 }
 
 /* ========================= grilles de polices ======== */
@@ -86,7 +74,6 @@ body, p, main, section {
     font-size: 14px;
 }
 
- 
 .vert{
     color: var(--color-green-hover);
 }
@@ -111,18 +98,17 @@ line-height: 18px;
 /* ========================= footer ============================================================*/
 .container-large-footer{
     height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     color: var(--color-white);
 }
-
 
 /* ============================= première partie du footer ==================== */
 .container-large-footer-1{
     height: 387px;
     background: var(--color-grey-clr);
     border-bottom: var(--color-black) solid 1px ;
+}
+.container-footer {
+    height: 80%;
 }
 
 footer h3{
@@ -172,6 +158,7 @@ footer .row4 {
     margin-bottom: 10px;
     color: var(--color-white);
     padding: 10px 15px;
+    resize: none;
 }
 
 
@@ -195,15 +182,8 @@ footer .row4 {
 .row-footer{
     justify-content: space-between;
     align-items: center;
-=======
-/* GRILLE */
-.container-large {
-    width: 100%;
 }
-.container {
-    width: 960px;
-    margin: auto;
-}
+
 .container-height {
     height: 970px;
     display: flex;
@@ -212,16 +192,6 @@ footer .row4 {
     height: 850px;
     margin-top: auto;
     margin-bottom: auto;
-}
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.col {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
 }
 /* COLOR */
 .main-color {
@@ -388,5 +358,4 @@ a:hover .text-over-img {
         height: 3px;
         width: 144%;
     }
->>>>>>> developpement
 }
