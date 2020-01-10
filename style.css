@@ -504,11 +504,9 @@ footer .row4 {
         flex-direction: column;
         align-items: center;
     }
-
-    nav ul {
-        margin-bottom: 40px;
+    .header li {
+        padding-top: 6px;
     }
-
     .img-carousel {
         width: 300px;
         height: 300px;
@@ -576,9 +574,6 @@ footer .row4 {
     /* FOOTER */
     .container-large-footer-1 {
         height: auto;
-        /* padding-top: 30px;
-        padding-bottom: 30px; */
-
     }
 
     footer .row4 {
@@ -615,7 +610,6 @@ footer .row4 {
         height: 300px;
     }
 
-
     .img-carousel {
         width: 200px;
         height: 200px;
@@ -635,57 +629,11 @@ footer .row4 {
         padding: 8px 8px;
         width: 100px;
     }
-    .menu {
-        position: absolute;
-        top: 10px;
-        right: 50px;
-    }
-    .img-burger {
-        display: unset;
-    }
-
-    .nav {
-        opacity: 0;
-        overflow: hidden;
-    }
-
-    label {
-        cursor: pointer;
-    }
-
-    .img-burger {
-        margin-top: 15px;
-    }
-
-    .onglet {
-        padding: 4px 5px;
-        font-size: 10px;
-        white-space: nowrap;
-    }
-    .hover-fixed:hover {
-        background-color: #76C38F !important;
-    }
-
-    .onglet:hover {
+    .hover-fixed {
         background-color: unset;
     }
-
-    .nav {
-        position: relative;
-        transition: all .5s ease-in;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        line-height: 18px;
-        position: absolute;
-        top: -60px;
-        right: 40px;
-    }
-
-    .burger:checked~.nav {
-        opacity: 1;
-        overflow: unset;
+    .menu li {
+        margin-bottom: 15px;
     }
 
     /* Services */
@@ -822,60 +770,12 @@ footer .row4 {
         padding: 8px 8px;
         width: 100px;
     }
-    .menu {
-        position: absolute;
-        top: 10px;
-        right: 30px;
-    }
-    .img-burger {
-        display: unset;
-    }
-
-    .nav {
-        opacity: 0;
-        overflow: hidden;
-    }
-
-    label {
-        cursor: pointer;
-    }
-
-    .img-burger {
-        margin-top: 15px;
-    }
-
-    .onglet {
-        padding: 4px 5px;
-        font-size: 10px;
-        white-space: nowrap;
-    }
-
-    .hover-fixed:hover {
-        background-color: #76C38F !important;
-    }
-
-    .onglet:hover {
+    .hover-fixed {
         background-color: unset;
     }
-
-    .nav {
-        position: relative;
-        transition: all .5s ease-in;
+    .menu li {
+        margin-bottom: 15px;
     }
-
-    .nav-list {
-        flex-direction: column;
-        line-height: 18px;
-        position: absolute;
-        top: -60px;
-        right: 40px;
-    }
-
-    .burger:checked~.nav {
-        opacity: 1;
-        overflow: unset;
-    }
-
     /* CONTENT */
     .container {
         width: 375px;
